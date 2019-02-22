@@ -1,21 +1,6 @@
 class Solution:
     def twoSum(self,nums, target):
 
-        
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        利用python中的字典记录记录下每个元素出现的位置
-        也就是其他语言中的哈希表
-        """
-        # dic = dict()
-        # for index,value in enumerate(nums):
-        #     sub = target - value
-        #     if sub in dic:
-        #         return [dic[sub],index]
-        #     else:
-        #         dic[value] = index
         dict = {}
 
         for i in range(len(nums)):
